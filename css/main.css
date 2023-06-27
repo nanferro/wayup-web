@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+    background-color: #FDFCEF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-weight: 700;
+    line-height: 1.4em;
+}
+
+p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.37em;
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 60px;
+}
+
+.logo {
+    display: block;
+}
+
+.description-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 82px;
+}
+
+.description {
+    width: 465px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.intro-text {
+    margin: 30px 0;
+    width: 420px;
+}
+
+.play-now {
+    display: block;
+    background: #FF6861;
+    border-radius: 100px;
+    padding: 22px 70px;
+    width: 227px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.37em;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.play-now:hover {
+    color: black;
+}
+
+section {
+    padding-top: 120px;
+}
+
+.features-heading {
+    font-size: 40px;
+    text-align: center;
+}
+
+.features-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 41px;
+    width: 720px;
+    margin: 70px auto 0 auto;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+}
+
+.feature-icon {
+    width: 73px;
+    height: 73px;
+    margin-right: 34px;
+}
+
+h3 {
+    font-size: 30px;
+    margin-bottom: 11px;
+}
+
+.feature-text {
+    width: 613px;
+}
+
+.try-wrapper {
+    background: linear-gradient(102deg, #FFF6DF 17.38%, #FFDFDE 81.25%);
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 76px 125px 75px 122px;
+}
+
+.try-heading {
+    font-size: 40px;
+    width: 475px;
+}
+
+.try-text {
+    margin: 24px 0;
+    width: 371px;
+}
+
+.footer {
+    font-size: 15px;
+    line-height: 1.37em;
+    text-align: center;
+    padding: 120px 0;
+}
+
+/* Responsive:
+Large: 992px - 1199px
+Medium: 768px - 991px
+Small: 576px - 767px
+Extra Small: 0px (320px) - 575px */
+
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    .logo {
+        margin: 0 auto;
+    }
+    .description-wrapper {
+        flex-direction: column;
+        text-align: center;
+        gap: 51px;
+    }
+    .play-now {
+        margin: 0 auto;
+    }
+    .try-wrapper {
+        flex-direction: column;
+        text-align: center;
+        padding: 101px 144px; 
+        gap: 51px;
+    }
+    .try-text {
+        margin: 24px auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+    .features-wrapper {
+        width: auto;
+    }
+    .feature-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}
+
+/* Вообще всё не работает для самого маленького формата, потом разберусь */
